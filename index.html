@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PuranBudget</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Budget App</h1>
+      </header>
+
+      <div class="Box">
+        <form id="item-form">
+          <div class="form-control">
+            <input
+              type="number"
+              class="form-input"
+              id="item-input"
+              name="item"
+              placeholder="Enter your budget"
+            />
+          </div>
+          <div class="form-control">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+
+        <!-- <div class="filter">
+          <input
+            type="text"
+            class="form-input-filter"
+            id="filter"
+            placeholder="Filter Items"
+          />
+        </div> -->
+
+        <ul id="item-list" class="items">
+          <!-- <li>
+            Apples
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li>
+            Orange Juice
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li>
+            Oreos
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li>
+            Milk
+            <button class="remove-item btn-link text-red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="Box2">
+        <form id="item-form2">
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-input2"
+              id="item-input2"
+              name="item"
+              placeholder="Enter your Expenses"
+            />
+            <input
+              type="number"
+              class="form-input2"
+              id="item-input3"
+              name="item"
+              placeholder="Enter your Expenses"
+            />
+          </div>
+          <div class="form-control">
+            <button type="submit" class="btn2">Submit</button>
+          </div>
+        </form>
+
+        <!-- <div class="filter">
+          <input
+            type="text"
+            class="form-input-filter2"
+            id="filter2"
+            placeholder="Filter Items"
+          />
+        </div> -->
+
+        <ul id="item-list2" class="items2"></ul>
+        <div class="output-container flex-space">
+          <div>
+            <p>Total Budget</p>
+            <span id="amount">0</span>
+          </div>
+          <div>
+            <p>Expenses</p>
+            <span id="expenditure-value">0</span>
+          </div>
+          <div>
+            <p>Balance</p>
+            <span id="balanceAmount">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
